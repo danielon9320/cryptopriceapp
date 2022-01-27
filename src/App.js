@@ -22,7 +22,7 @@ function App() {
 
   //list of coins after the filter is aplied
   const filteredCoins = listOfCoins.filter((coin) => {
-    return coin.name.includes(searchWord);
+    return coin.name.toLowerCase().includes(searchWord.toLowerCase());
   })
 
 
